@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css?family=Alata&display=swap');
+body {
+    font-family: 'Alata', sans-serif;
+}
+.boekSelectie__cover {
+    max-width: 100px;
+
+}
+
+.boekSelectie__rij--accent{
+background-color:rgb(110, 54, 54);
+color: white;
+}
+.boekSelectie_data-cel{
+    padding: 1em;
+    vertical-align: top;
+}
+.boekSelectie_data-cel:nth-child(3){
+    padding: 0;
+}
+
+.boekSelectie {
+display: grid;
+grid-template-columns: auto 1fr auto;
+grid-gap: 1em;
+
+}
+
+.boekSelectie__titel{
+    margin: 0;
+
+}
+.boekSelectie:nth-child(even) {
+    background-color: #eee;
+}
+.boekSelectie__main {
+    display: grid;
+    grid-template-rows: auto 1fr auto ;
+    padding: .5em;
+}
+
+.boekSelectie__overig {
+    margin: 0;
+    font-size: .8em;
+    color: #444;
+
+}
+
+.boekSelectie__prijs {
+    font-size: 2em;
+}
+
+@media screen and (mind-width: 50em) {
+    #uitvoer {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-column-gap: 2em;
+        
+    }
+    .boekSelectie:nth-child(even) {
+        background-color: inherit;
+    }
+    .boekSelectie:nth-child(4n+2),
+    .boekSelectie:nth-child(4n+3) {
+        background-color: #eee;
+    }
+}
